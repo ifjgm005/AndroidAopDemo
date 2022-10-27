@@ -15,17 +15,17 @@ class MainActivity : AppCompatActivity() {
         var TAG="MainActivity"
         setContentView(R.layout.activity_main)
         var button = findViewById<Button>(R.id.btn_add)
-        var textView=findViewById<TextView>(R.id.textView)
+        var btn_22=findViewById<Button>(R.id.btn_22)
         var animal = Animal()
         button.setOnClickListener {
-            Log.d(TAG, " onCreate fly start...");
+            Log.e(TAG, " onCreate fly start...");
             animal.fly();
-            Log.d(TAG, " onCreate finish...");
+            Log.e(TAG, " onCreate finish...");
         }
 
-        textView.setOnLongClickListener{
-            Log.d(TAG, " hello world is clicked...")
-            true
+        btn_22.setOnClickListener{
+            Log.e(TAG, " hello world is clicked...")
+
         }
 
 
